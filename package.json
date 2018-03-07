@@ -5,12 +5,15 @@
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
     "jest-react-native": "^18.0.0",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "typescript": "^2.7.2"
   },
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "tsc": "tsc",
+    "tsc-watch": "tsc --watch",
     "test": "node node_modules/jest/bin/jest.js"
   },
   "jest": {

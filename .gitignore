@@ -19,3 +19,6 @@ yarn-error.log*
 # visual studio code 
 .vscode
 .history
+
+# TypeScript
+lib/
