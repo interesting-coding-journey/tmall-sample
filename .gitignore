@@ -48,3 +48,11 @@ build/
 .gradle
 local.properties
 *.iml
+
+# TypeScript
+#
+lib/
+
+# Jest
+#
+.jest/
