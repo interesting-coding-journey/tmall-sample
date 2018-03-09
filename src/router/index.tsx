@@ -3,7 +3,7 @@ import { Provider, observer } from 'mobx-react'
 import { StatusBar, View, Text, StyleSheet } from 'react-native'
 import StackNavigation from './stackNavigation'
 
-import store from '../stores'
+import stores from '../stores'
 
 import styles from './style'
 
@@ -14,7 +14,7 @@ interface State {}
 class RouterNavigation extends React.Component<Props, State> {
   render() {
     return (
-      <Provider store={store}>
+      <Provider {...stores}>
         <View style={styles.appContainer}>
           <StatusBar
             barStyle="light-content"
