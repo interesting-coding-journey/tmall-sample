@@ -5,9 +5,7 @@ import VipScreen from '../../screens/vipScreen'
 import BrandScreen from '../../screens/brandScreen'
 import CartScreen from '../../screens/cartScreen'
 import PersonalScreen from '../../screens/personalScreen'
-
-
-const $primaryColor = '#1890ff'
+import { $primaryColor } from '../../utils/colorVariables'
 
 const stackNavigatorConfig: any = {
   navigationOptions: {

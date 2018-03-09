@@ -7,7 +7,7 @@ import VipScreen from '../../screens/vipScreen'
 import CartScreen from '../../screens/cartScreen'
 import PersonalScreen from '../../screens/personalScreen'
 
-const routeConfigs = {
+const routeConfigs: any = {
   Home: {
     screen            : HomeScreen,
     navigationOptions : {
@@ -16,7 +16,7 @@ const routeConfigs = {
         const tintColor = props.tintColor
         
         return (
-          <Icon name="home" color={tintColor} size={22} />
+          <Icon name="home" color={tintColor} size={24} />
         )
       },
     },
@@ -29,7 +29,7 @@ const routeConfigs = {
         const tintColor = props.tintColor
 
         return (
-          <Icon name="user" color={tintColor} size={22} />
+          <Icon name="diamond" color={tintColor} size={24} />
         )
       },
     },
@@ -42,7 +42,7 @@ const routeConfigs = {
         const tintColor = props.tintColor
 
         return (
-          <Icon name="th-list" color={tintColor} size={22} />
+          <Icon name="credit-card" color={tintColor} size={24} />
         )
       },
     },
@@ -55,7 +55,7 @@ const routeConfigs = {
         const tintColor = props.tintColor
 
         return (
-          <Icon name="shopping-cart" color={tintColor} size={22} />
+          <Icon name="shopping-cart" color={tintColor} size={24} />
         )
       },
     },
@@ -68,14 +68,12 @@ const routeConfigs = {
         const tintColor = props.tintColor
 
         return (
-          <Icon name="user" color={tintColor} size={22} />
+          <Icon name="user" color={tintColor} size={24} />
         )
       },
     },
   },
 }
-
-
 
 const tabNavigatorConfig: any = {
   tabBarComponent  : TabBarBottom,
@@ -86,7 +84,7 @@ const tabNavigatorConfig: any = {
   initialRouteName : '',
   backBehavior     : 'none',
   tabBarOptions    : {
-    activeTintColor   : '#4bc1d2',
+    activeTintColor   : 'red',
     inactiveTintColor : '#000',
     showIcon          : true,
     showLabel         : true,
