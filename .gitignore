@@ -19,6 +19,7 @@ yarn-error.log*
 # visual studio code 
 .vscode
 .history
+.DS_Store
 
 # TypeScript
 #
