@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Provider, observer } from 'mobx-react'
-import { StatusBar, View, Text, StyleSheet } from 'react-native'
+import { StatusBar, View } from 'react-native'
 import StackNavigation from './stackNavigation'
 
 import store from '../stores'
