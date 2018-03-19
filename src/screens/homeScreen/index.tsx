@@ -20,6 +20,7 @@ class HomeScreen extends React.Component<any, any> {
   render() {
     return (
       <View>
+        <View></View>
         <Text>精选</Text>
         <Text>{this.props.test.num}</Text>
         <Button
