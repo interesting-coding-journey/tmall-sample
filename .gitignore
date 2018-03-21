@@ -18,6 +18,7 @@ yarn-error.log*
 
 # visual studio code 
 .vscode
+.DS_Store
 .history
 
 

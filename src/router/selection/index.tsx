@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { SafeAreaView, StatusBar, Text, Button } from 'react-native';
 import Styles from './style';
+import EsayEnter from '../../components/esayEnter';
 
 interface props {
   navigation: any
@@ -34,12 +35,13 @@ export default class SelectionScreen extends React.Component<props, {}> {
 
   render() {
     return (
-      <SafeAreaView style={[Styles.container, { backgroundColor: '#6a51ae' }]}>
+      <SafeAreaView style={[Styles.container]}>
         <StatusBar 
           barStyle="light-content"
           backgroundColor="#6a51ae"
         />
         <Text>精选页面</Text>
+        <EsayEnter />
         <Button
           title="Go to Brand"
           onPress={this.handlePress}
