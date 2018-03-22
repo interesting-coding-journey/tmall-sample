@@ -10,26 +10,21 @@ interface Options {
 }
 
 export default class MemberScreen extends React.Component<props, {}> {
-
-  static navigationOptions = ({ navigation }:Options) => {
-    const params = navigation.state.params || {}
-
-    return {
-      headerTitle: "会员",
-      headerRight: (
-        <Button
-          onPress={() => navigation.navigate('MyModal')}
-          title="Info"
-          color="#fff"
-        />
-      ),
-    }
-  }
+  static navigationOptions = ({ navigation }:Options) => ({
+    headerTitle: '会员',
+    headerRight: (
+      <Button
+        onPress={() => navigation.navigate('MyModal')}
+        title="Info"
+        color="#fff"
+      />
+    ),
+  })
 
   handlePress = () => this.props.navigation.navigate('Brand', {
     id: 56,
     name: 'Romens',
-    title: '品牌'
+    title: '品牌',
   })
 
   render() {

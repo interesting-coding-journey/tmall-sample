@@ -56,3 +56,9 @@ lib/
 # Jest
 #
 .jest/
+
+# yarn
+yarn.lock
+
+# npm
+package-lock.json

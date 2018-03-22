@@ -1,6 +1,6 @@
 // import * as React from 'react';
 import * as React from 'react';
-import { View, StatusBar, Text, Button } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import Styles from './style';
 
 interface props {
@@ -12,9 +12,8 @@ interface options {
 }
 
 export default class BrandScreen extends React.Component<props, {}> {
-
   static navigationOptions = ({ navigation }:options) => {
-    const { params } = navigation.state
+    const { params } = navigation.state;
 
     return {
       title: params ? params.title : '品牌',
@@ -31,8 +30,8 @@ export default class BrandScreen extends React.Component<props, {}> {
   handleUpdateTitle = () => this.props.navigation.setParams({ title: '新品牌' })
 
   render() {
-    const { params = {} } = this.props.navigation.state
-    const { id, name } = params
+    const { params = {} } = this.props.navigation.state;
+    const { id, name } = params;
 
     return (
       <View style={Styles.container}>
@@ -42,15 +41,15 @@ export default class BrandScreen extends React.Component<props, {}> {
         <Button
           title="Go to Brand"
           onPress={this.handleGoToBrand}
-        ></Button>
+        />
         <Button
           title="Go Back"
           onPress={this.handleBack}
-        ></Button>
+        />
         <Button
           title="Update the title"
           onPress={this.handleUpdateTitle}
-        ></Button>
+        />
       </View>
     );
   }

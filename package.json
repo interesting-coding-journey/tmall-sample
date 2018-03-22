@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
     "mobx": "4.1.0",
     "mobx-react": "5.0.0",
     "react": "16.2.0",
@@ -23,12 +25,19 @@
     "babel-preset-react-native": "4.0.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-typescript": "^0.10.0",
     "jest": "22.4.2",
     "react-addons-test-utils": "15.6.2",
     "react-dom": "16.2.0",
     "react-test-renderer": "16.2.0",
     "ts-jest": "22.4.1",
-    "typescript": "2.7.2"
+    "typescript": "2.7.2",
+    "typescript-eslint-parser": "^14.0.0"
   },
   "scripts": {
     "start": "react-native start",
@@ -36,14 +45,20 @@
     "ios": "react-native run-ios",
     "test": "jest",
     "tscWatch": "./node_modules/.bin/tsc --watch",
-    "postinstall": "rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json"
+    "postinstall": "rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+   "*.ts": ["eslint --fix", "git add"],
+   "*.tsx": ["eslint --fix", "git add"]
   },
   "jest": {
     "preset": "react-native",
     "moduleFileExtensions": [
+      "js",
+      "jsx",
       "ts",
-      "tsx",
-      "js"
+      "tsx"
     ],
     "transform": {
       "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
