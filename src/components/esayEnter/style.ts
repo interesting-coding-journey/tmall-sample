@@ -1,29 +1,29 @@
-import { StyleSheet, Dimensions } from 'react-native'
+import { StyleSheet } from 'react-native'
 
-// import ScreenUtil from '../../utils/screenUtil.js'
+import ScreenUtil from '../../utils/screenUtil.js'
 
-// const { getScreenScale } = ScreenUtil
-
-const { width }: { width: number } = Dimensions.get('window')
-const itemWidth: number = (width / 3) - 20
-
-const $red: string = '#ef1d2c'
+const { getScreenScale } = ScreenUtil
 
 const styles = StyleSheet.create({
   esayEnterContainer: {
-    backgroundColor : $red,
-    flexDirection   : 'row',
-    justifyContent  : 'space-around',
-    alignItems      : 'center',
+    flexDirection     : 'row',
+    justifyContent    : 'space-around',
+    alignItems        : 'center',
+    paddingHorizontal : getScreenScale(20),
+    paddingBottom     : getScreenScale(20),
   },
   item: {
-    position: 'relative',
+    width      : getScreenScale(140),
+    height     : getScreenScale(150),
+    alignItems : 'center',
   },
   image: {
-    width  : 48,
-    height : 48,
+    width     : getScreenScale(96),
+    height    : getScreenScale(96),
+    marginTop : getScreenScale(10),
   },
   name: {
+    marginTop: getScreenScale(16),
   },
 })
 

@@ -13,6 +13,12 @@ import {
 } from 'react-native'
 
 class ScreenUtil {
+  defaultPixel: number
+  defaultWidth: number
+  defaultHeigth: number
+  pixelRatio: number
+  scale: number
+  fontScale: number
   constructor() {
     this.defaultPixel = 2 // iphone6的像素密度
     this.defaultWidth = 750 // iphone6的宽度
@@ -29,29 +35,26 @@ class ScreenUtil {
     this.fontScale = PixelRatio.getFontScale()
   }
 
-  getFontScale = (size) => {
-    let temp = size
+  getFontScale = (size: number) => {
+    let temp: number = size
     temp = Math.round((((temp * this.scale) + 0.5) * this.pixelRatio) / this.fontScale)
 
     return temp / this.defaultPixel
   }
 
-  getFontHeight = (size) => {
-    const height = Platform.OS === 'ios' ? Math.round(size * 1.2) : Math.round(size * 1.35)
+  getFontHeight = (size: number) => {
+    const height: number = Platform.OS === 'ios' ? Math.round(size * 1.2) : Math.round(size * 1.35)
 
     return height
   }
 
-  getScreenScale = (size) => {
-    const temp = size
-    let newSize = temp / this.defaultPixel
+  getScreenScale = (size: number) => {
+    const temp: number = size
+    let newSize: number = temp / this.defaultPixel
     newSize = Math.round(newSize * this.scale)
 
     return newSize
   }
 }
 
-const instance = new ScreenUtil()
-Object.freeze(instance)
-
-export default instance
+export default new ScreenUtil()
