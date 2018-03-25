@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { View, Text, Button, TouchableOpacity, Image } from 'react-native'
+import { View } from 'react-native'
 import _ from 'lodash'
 import Item from './item'
 import Styles from './style'

@@ -1,8 +1,6 @@
 import * as React from 'react'
-import { View, Text, Button, TouchableOpacity, Image } from 'react-native'
+import { Text, TouchableOpacity, Image } from 'react-native'
 import Styles from './style'
-
-const suning = require('./suning.jpg')
 
 interface Props {
   name?: string,

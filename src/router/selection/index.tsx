@@ -2,6 +2,7 @@ import * as React from 'react';
 import { SafeAreaView, StatusBar, Text, Button } from 'react-native';
 import Styles from './style';
 import EsayEnter from '../../components/esayEnter';
+import Carousel from '../../components/carousel';
 
 interface props {
   navigation: any
@@ -42,6 +43,7 @@ export default class SelectionScreen extends React.Component<props, {}> {
         />
         <Text>精选页面</Text>
         <EsayEnter />
+        <Carousel />
         <Button
           title="Go to Brand"
           onPress={this.handlePress}
