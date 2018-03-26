@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { SafeAreaView, StatusBar, Text, Button } from 'react-native';
 import Styles from './style';
+import Carousel from './carousel'
 
 interface props {
   navigation: any
@@ -39,11 +40,12 @@ export default class SelectionScreen extends React.Component<props, {}> {
           barStyle="light-content"
           backgroundColor="#6a51ae"
         />
-        <Text>精选页面</Text>
+        <Carousel/>
         <Button
           title="Go to Brand"
           onPress={this.handlePress}
-        ></Button>
+        >
+        </Button>
       </SafeAreaView>
     );
   }

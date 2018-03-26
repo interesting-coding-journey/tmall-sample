@@ -444,13 +444,13 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@^0.52.18":
+"@types/react-native@0.52.18":
   version "0.52.18"
   resolved "http://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.52.18.tgz#082fada6fdddc6c745a4c1a6234e4aa3b104176b"
   dependencies:
     "@types/react" "*"
 
-"@types/react-navigation@^1.2.3":
+"@types/react-navigation@1.2.3":
   version "1.2.3"
   resolved "http://registry.npm.taobao.org/@types/react-navigation/download/@types/react-navigation-1.2.3.tgz#3783fd9a93932403164d0a90d6888058e8a6653a"
   dependencies:
@@ -4269,6 +4269,12 @@ react-native-safe-area-view@^0.7.0:
   dependencies:
     hoist-non-react-statics "^2.3.1"
 
+react-native-swiper@^1.5.13:
+  version "1.5.13"
+  resolved "http://registry.npm.taobao.org/react-native-swiper/download/react-native-swiper-1.5.13.tgz#fa695cd4ab77b9a9df2d2bfee38ea7274dd07a2e"
+  dependencies:
+    prop-types "^15.5.10"
+
 "react-native-tab-view@github:react-navigation/react-native-tab-view":
   version "0.0.74"
   resolved "https://codeload.github.com/react-navigation/react-native-tab-view/tar.gz/36ebd834d78b841fc19778c966465d02fd1213bb"
@@ -4346,7 +4352,7 @@ react-native@0.54.2:
     xmldoc "^0.4.0"
     yargs "^9.0.0"
 
-react-navigation@^1.5.8:
+react-navigation@1.5.8:
   version "1.5.8"
   resolved "http://registry.npm.taobao.org/react-navigation/download/react-navigation-1.5.8.tgz#f04bec1a39af8cfcf651337d351e8d0a144f1b6d"
   dependencies:
@@ -5133,10 +5139,6 @@ typedarray@^0.0.6:
 typescript@2.7.2:
   version "2.7.2"
   resolved "http://cd:4873/typescript/-/typescript-2.7.2.tgz#2d615a1ef4aee4f574425cdff7026edf81919836"
-
-typescript@^2.7.2:
-  version "2.7.2"
-  resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.7.2.tgz#2d615a1ef4aee4f574425cdff7026edf81919836"
 
 ua-parser-js@^0.7.9:
   version "0.7.17"
