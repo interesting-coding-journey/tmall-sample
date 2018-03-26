@@ -1,0 +1,1 @@
+import {Dimensions} from 'react-native';//获取设备的宽const deviceWidthDp = Dimensions.get('window').width;/** * @object revertPixelToDp * @revertWidthPixelToDp function * @return number */const revertPixelToDp =  {    revertWidthPixelToDp :(uiElementPx, imageWidthPx) => {        return uiElementPx *  deviceWidthDp / imageWidthPx;    },}export default revertPixelToDp;
